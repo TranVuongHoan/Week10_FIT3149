@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Custom JS -->
+  <script src="vega_lite_vis.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Vega-Lite Visualizations</title>
+</head>
+<body>
+  <h1>Vega-Lite Graphs</h1>
+
+  <!-- Chart 1 (text left, chart right) -->
+  <div class="chart-container">
+    <div class="chart-text">
+      <h2>How do CPI changes vary across Australia’s capital cities?</h2>
+        <p>This bar chart compares quarterly CPI changes across capital cities. Perth shows the highest increase, while Canberra records the lowest.</p>
+    </div>
+    <div class="chart-vis" id="bar_chart"></div>
+  </div>
+
+  <!-- Chart 2 (text left, chart right) -->
+  <div class="chart-container">
+    <div class="chart-text">
+      <h2>Where in the world are tropical cyclones most frequent?</h2>
+        <p>This global cyclone map shows storm tracks from the last 3 years. Bubble size indicates wind speed, and colour shows central pressure.</p>
+    </div>
+    <div class="chart-vis" id="map"></div>
+  </div>
+
+</body>
+</html>
